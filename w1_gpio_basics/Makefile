@@ -23,4 +23,4 @@ BUILD_HOME=../..
 
 BINARY = main
 
-include $(BUILD_HOME)/src/Makefile.include
+include $(BUILD_HOME)/DSR-osless-tasks/Makefile.include

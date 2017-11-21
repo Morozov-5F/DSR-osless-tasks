@@ -2,7 +2,7 @@
 #define __LEDS_AND_BUTTON_H
 
 #include "stm32f4xx.h"
-#include "stm32f4_eval_board.h"
+
 #if defined (USE_STM324xG_EVAL)
   #include "stm324xg_eval.h"
 
@@ -14,5 +14,4 @@
 #endif
 
 #include <math.h>
-
 #endif

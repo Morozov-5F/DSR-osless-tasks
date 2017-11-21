@@ -4,7 +4,7 @@ ARCH_FLAGS     = -mthumb -mcpu=cortex-m4 $(FP_FLAGS)
 STARTUP_S      = $(BUILD_HOME)/stm_spl/startup_stm32f40_41xxx.S
 STARTUP        = ${STARTUP_S:.S=.o}
 
-WORKING_DIR    = $(BUILD_HOME)/src
+WORKING_DIR    = $(BUILD_HOME)/DSR-osless-tasks
 
 ################################################################################
 # OpenOCD specific variables
@@ -32,7 +32,7 @@ OBJS = ${SRCS:.c=.o}
 # Common defines for all workshops
 DEFS = -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DUSE_STM32F4DISC_EVAL \
        -DUSE_EXT_LEDS -DHSE_VALUE=8000000
-INCLUDE_DIRS = -I$(WORKING_DIR)/include
+INCLUDE_DIRS += -I$(WORKING_DIR)/include
 
 ################################################################################
 # Linker script for all workshops
