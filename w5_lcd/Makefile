@@ -20,7 +20,7 @@
 all: images
 
 BUILD_HOME=../..
-OBJS += lcd.o
+SRCS += lcd.c i2c_wrapper.c
 BINARY = main
 
 include $(BUILD_HOME)/DSR-osless-tasks/Makefile.include
